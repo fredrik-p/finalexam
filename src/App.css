@@ -106,3 +106,14 @@
 .app__signup > * {
   margin-top: 10px;
 }
+
+.image__upload__app {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+/* Hide scrollbar*/
+body::-webkit-scrollbar {
+  display: none;
+}
