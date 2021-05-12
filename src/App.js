@@ -1,15 +1,44 @@
-import './App.css';
+import React, { useEffect, useState } from "react";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import UserContext from "./context/UserContext";
+import "./App.css";
+
+import HomePage from "./components/HomePage";
+import Navbar from "./components/Navbar";
+import Profile from "./components/Profile";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          This is my final exam! I'm uploading everything from scratch for a cleaner repository. The road has been long and messy!
-        </p>
+  const [user, setUser] = useState(null);
+  const [opensignin, setOpensignin] = useState(false);
+  const [openImageup, setOpenImageup] = useState(false);
+  const [imageURL, setImageURL] = useState("");
 
-      </header>
-    </div>
+  useEffect(() => {
+    if (user) setImageURL(user.photoURL);
+    else setImageURL("");
+  }, [user]);
+
+  return (
+    <UserContext.Provider
+      value={{
+        user,
+        setUser,
+        opensignin,
+        setOpensignin,
+        openImageup,
+        setOpenImageup,
+        imageURL,
+        setImageURL,
+      }}
+    >
+      <BrowserRouter>
+        <Navbar />
+        <Switch>
+          <Route exact path="/" component={HomePage} />
+          <Route path="/profile" component={Profile} />
+        </Switch>
+      </BrowserRouter>
+    </UserContext.Provider>
   );
 }
 

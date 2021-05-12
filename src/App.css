@@ -1,14 +1,108 @@
-.App {
-  text-align: center;
+* {
+  scroll-behavior: smooth;
+  margin: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app__body {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 25px 0;
+  background-color: #dddddd;
+}
+
+.left__side {
+  margin: 0 15px;
+}
+
+.right__side {
+  margin-right: 15px;
+}
+.right__side > * {
+  margin-bottom: 40px;
+}
+
+@media only screen and (max-width: 640px) {
+  .left__side {
+    margin: 0px;
+    width: 100%;
+  }
+  .image__upload__app {
+    padding: 0 15px;
+  }
+  .right__side {
+    margin-right: 0px;
+  }
+}
+
+.app__header__main {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: #dddddd;
+  height: 54px;
+}
+
+.app__header {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  max-width: 942px;
+  padding: 0px 20px;
+
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.app__headerimage__36 {
+  height: 20px;
+  position: relative;
+}
+
+.app__headerImage__nav {
+  /*position: absolute;*/
+  width: 50%;
+  cursor: pointer;
+}
+
+.navbar__right__icons {
+  display: flex;
+  align-items: center;
+}
+
+.navbar__right__icons > *:not(:first-child) {
+  margin-left: 18px !important;
+}
+
+.MuiList-padding {
+  padding: 0px !important;
+}
+.MuiMenuItem-root {
+  padding-right: 120px !important;
+}
+.MuiTypography-body1 {
+  font-size: 14px !important;
+}
+.MuiListItemIcon-root {
+  min-width: 16px !important;
+  margin-right: 6px !important;
+}
+.log__out__dropdown {
+  border-top: 1px solid lightgray !important;
+}
+
+.app__headerImage {
+  align-self: center;
+  width: 103px;
+  height: auto;
+  object-fit: contain;
+}
+
+.app__signup {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.app__signup > * {
+  margin-top: 10px;
 }
