@@ -1,0 +1,47 @@
+.upload__profilepic__modal {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .upload__profilepic__modal > * {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .upload__profilepic__modal :first-child {
+    height: 78px;
+  }
+  
+  .upload__profilepic__modal > *:not(:first-child) {
+    height: 48px;
+    border-top: 1px solid lightgray !important;
+    cursor: pointer;
+  }
+  
+  .profile__details {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .profile__avatar {
+    margin-left: 20px;
+  }
+  
+  .profile__info {
+    margin-left: 30px;
+  }
+  
+  .no__posts__yet {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .other__user__profile {
+    display: flex;
+    justify-content: center;
+  }
+  

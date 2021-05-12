@@ -1,4 +1,4 @@
-# This project is my final examination at Medieinstitutet and the app is called Talk Photo. More info to come! ✌️
+# This project is my final examination at Medieinstitutet and the app is called Phototalk. More info to come! ✌️
 
 ## Getting Started with Create React App
 
