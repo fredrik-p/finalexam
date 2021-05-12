@@ -1,0 +1,111 @@
+.post {
+    max-width: 600px;
+    background-color: white;
+    border: none;
+    margin: auto;
+    margin-bottom: 40px;
+    border-radius: 10px;
+  }
+  
+  @media only screen and (max-width: 640px) {
+    .post {
+      border-left: none;
+      border-right: none;
+      border-top: none;
+      min-width: 100%;
+      background-color: #fafafa;
+      margin-bottom: 10px;
+    }
+    .comment__input {
+      background-color: #fafafa;
+    }
+  }
+  
+  .post__image {
+    width: 100%;
+    object-fit: contain;
+  }
+  
+  .post__text {
+    font-weight: normal;
+    padding: 10px;
+    margin-bottom: -10px;
+  }
+  
+  .post__header {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+  }
+  
+  .post__avatar {
+    margin-right: 16px;
+  }
+  
+  .post__comments {
+    padding: 10px;
+  }
+  
+  .view__all {
+    padding: 20px 0 0 10px;
+    margin-bottom: -5px;
+  }
+  
+  .view__all p {
+    cursor: pointer;
+    opacity: 0.5;
+  }
+  
+  .comment__box {
+    display: flex;
+  }
+  
+  .asdasdasdasd {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+  }
+  
+  .comment__input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 20px 18px;
+    border-top: 1px solid lightgray;
+    border-radius: 0px 0px 10px 10px;
+  }
+  
+  .comment__input::placeholder {
+    opacity: 0.7;
+  }
+  
+  .comment__button {
+    flex: 0;
+    border: none;
+    outline: none;
+    padding-right: 15px;
+    color: #b4e0fc;
+    border-top: 1px solid lightgray;
+    background-color: transparent;
+  }
+  .comment__button:enabled {
+    color: black;
+  }
+  
+  .post__likes {
+    display: flex;
+  }
+  
+  .like__logo {
+    margin-right: 10px;
+  }
+  
+  .post__likes__delete {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .MuiAvatar-root {
+    font-size: 12px !important;
+  }
