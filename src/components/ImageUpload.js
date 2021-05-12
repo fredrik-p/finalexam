@@ -5,6 +5,7 @@ import firebase from "firebase";
 import "./ImageUpload.css";
 import { Button, Input, makeStyles } from "@material-ui/core";
 import { lightBlue } from "@material-ui/core/colors";
+import logo from "../images/logo.png"
 
 const useStyles = makeStyles((theme) => ({
     lightblue: {
@@ -76,7 +77,7 @@ function ImageUpload() {
             <div className="image__upload">
                 <img
                     className="app__headerImage"
-                    src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png"
+                    src={logo}
                     alt=""
                 />
                 <progress style={{ width: "100%" }} value={progress} max="100" />
