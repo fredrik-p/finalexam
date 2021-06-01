@@ -1,4 +1,4 @@
-# This project is my final examination at Medieinstitutet and the app is called Phototalk. ✌️
+# This project is my final examination at Medieinstitutet and the app is called Talkphoto. ✌️
 
 
 **Live:** <https://phototalk-e474e.firebaseapp.com/>
