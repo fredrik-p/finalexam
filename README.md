@@ -1,4 +1,7 @@
-# This project is my final examination at Medieinstitutet and the app is called Phototalk. More info to come! ✌️
+# This project is my final examination at Medieinstitutet and the app is called Phototalk. ✌️
+
+
+**Live:** <https://phototalk-e474e.firebaseapp.com/>
 
 ## Getting Started with Create React App
 
